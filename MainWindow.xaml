@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfAppTopRep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTopRep"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid Background="#FF383838">
+        <Label Content="/topRep" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="55" Width="149" FontSize="36" Foreground="#FFFF8000" FontFamily="Rockwell"/>
+        <TextBox x:Name ="usernameTextBox" TabIndex="1" Focusable="True" HorizontalAlignment="Left" Margin="165,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Height="22" Loaded="usernameTextBox_Loaded"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="94,91,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="94,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Login" TabIndex="3" HorizontalAlignment="Left" Margin="213,178,0,0" VerticalAlignment="Top" Width="76" Click="LoginClick"/>
+        <Button Content="Cancel" TabIndex="4" HorizontalAlignment="Left" Margin="294,178,0,0" VerticalAlignment="Top" Width="75" Click="CancelClick"/>
+        <PasswordBox x:Name="passwordBox" TabIndex="2" MaxLength="10" Margin="165,120,44,66"/>
+        <TextBlock x:Name="statusText" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+        <Label Content="Accounting Management System" HorizontalAlignment="Left" Margin="34,41,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF00FBD3" FontSize="14"/>
+
+    </Grid>
+</Window>

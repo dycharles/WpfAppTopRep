@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfAppTopRep.DailyIncome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTopRep"
+        mc:Ignorable="d"
+        Title="DailyIncome" Height="600" Width="670">
+    <Grid Background="#FF383838">
+        <Label Content="/topRep" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="55" Width="149" FontSize="36" Foreground="#FFFF8000" FontFamily="Rockwell"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="7,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="633" Fill="#FF1F1F1F"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="77,93,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="descriptionComboBox" TabIndex="2" HorizontalAlignment="Left" Margin="82,116,0,0" VerticalAlignment="Top" Width="356" Height="27" FontSize="18"/>
+        <Button Content="Submit Report" TabIndex="6" HorizontalAlignment="Left" Margin="421,519,0,8" Width="219" Click="SubmitClick"/>
+        <Label Content="Amount" HorizontalAlignment="Left" Margin="438,95,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="amountTextBox" TextAlignment="Center" TabIndex="3" HorizontalAlignment="Left" Margin="443,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" PreviewTextInput="amountTextBox_PreviewTextInput" Height="27" FontSize="18" KeyDown="amountTextBox_KeyDown"/>
+        <Button Content="Insert" TabIndex="5" HorizontalAlignment="Left" Margin="560,116,0,0" VerticalAlignment="Top" Width="82" Click="InsertClick" Height="101"/>
+        <Label x:Name="totalAmountLabel" Content="345345345" Margin="487,32,0,0" VerticalAlignment="Top" Foreground="#FFB9FADA" Width="164" FontSize="24" HorizontalAlignment="Left"/>
+        <DataGrid x:Name="descriptionDataGrid" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="11,232,14,70"/>
+        <TextBox x:Name="commentTextBox"  TabIndex="4" Margin="11,163,115,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" VerticalAlignment="Top" Height="54"/>
+        <Label x:Name="dailyUniqueIDLabel" Content="345345345" Margin="318,33,0,0" VerticalAlignment="Top" Foreground="#FFB9FADA" Width="130" FontSize="24" HorizontalAlignment="Left"/>
+        <TextBox x:Name="quantityTextBox" TextAlignment="Center" TabIndex="1" HorizontalAlignment="Left" Margin="11,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" PreviewTextInput="quantityTextBox_PreviewTextInput" Text="1" Height="27" FontSize="18" Loaded="quantityTextBox_Loaded"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="6,93,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Comment" HorizontalAlignment="Left" Margin="6,141,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="dailyUniqueIDLabel_Copy" Content="Income No:" Margin="0,45,0,0" VerticalAlignment="Top" Foreground="White" Width="160" HorizontalAlignment="Center"/>
+        <Label x:Name="dailyUniqueIDLabel_Copy1" Content="Total:" Margin="458,45,0,0" VerticalAlignment="Top" Foreground="White" Width="66" HorizontalAlignment="Left"/>
+        <Label Content="Income" HorizontalAlignment="Left" Margin="562,64,0,0" VerticalAlignment="Top" Width="164" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Accounting Management System" HorizontalAlignment="Left" Margin="34,40,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF00FBD3" FontSize="14"/>
+
+    </Grid>
+</Window>

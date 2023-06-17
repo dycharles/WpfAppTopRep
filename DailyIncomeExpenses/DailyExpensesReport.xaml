@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppTopRep.DailyExpensesReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTopRep"
+        mc:Ignorable="d"
+        Title="DailyExpensesReport" Height="620" Width="800">
+    <Grid Background="#FF383838">
+        <Label Content="/topRep" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="55" Width="149" FontSize="36" Foreground="#FFFF8000" FontFamily="Rockwell"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="7,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="783" Fill="#FF1F1F1F"/>
+        <Rectangle HorizontalAlignment="Center" Height="385" Margin="0,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="#FF37523F"/>
+        <ListBox x:Name="storeList" TabIndex="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,163,677,102" SelectionChanged="storeList_SelectionChanged"/>
+        <DataGrid x:Name="descriptionDataGrid" IsReadOnly="True" TabIndex="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="307,163,31,102"/>
+        <Label Content="Expenses Report" HorizontalAlignment="Left" Margin="630,64,0,0" VerticalAlignment="Top" Width="164" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <ListBox x:Name="dateList" TabIndex="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="128,163,498,102" SelectionChanged="dateList_SelectionChanged"/>
+        <Label Content="Date Submitted" HorizontalAlignment="Left" Margin="128,140,0,0" VerticalAlignment="Top" Width="120" Foreground="White" FontWeight="Bold"/>
+        <Label Content="List of Income" HorizontalAlignment="Left" Margin="302,137,0,0" VerticalAlignment="Top" Width="116" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="reportIncomeButton" TabIndex="4" Content="Print Report" HorizontalAlignment="Left" Margin="586,510,0,0" VerticalAlignment="Top" Height="48" Width="185" Click="reportIncomeButton_Click"/>
+        <Label x:Name="totalAmountLabel" Content="0.00" HorizontalAlignment="Left" Margin="549,124,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF00FBD3" FontSize="24"/>
+        <Label Content="Store List" HorizontalAlignment="Left" Margin="24,137,0,0" VerticalAlignment="Top" Width="79" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Total:" HorizontalAlignment="Left" Margin="514,137,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Accounting Management System" HorizontalAlignment="Left" Margin="34,40,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF00FBD3" FontSize="14"/>
+
+    </Grid>
+</Window>

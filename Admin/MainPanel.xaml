@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfAppTopRep.MainPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTopRep"
+        mc:Ignorable="d"
+        Title="MainPanel" Height="252" Width="648">
+    <Grid Background="#FF383838">
+        <Label Content="/topRep" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="55" Width="149" FontSize="36" Foreground="#FFFF8000" FontFamily="Rockwell"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="7,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="613" Fill="#FF1F1F1F"/>
+        <Label Content="Main Panel" HorizontalAlignment="Left" Margin="508,66,0,0" VerticalAlignment="Top" Width="117" Foreground="White" FontSize="18" Background="{x:Null}" FontWeight="Bold"/>
+        <Button Content="User" TabIndex="1" HorizontalAlignment="Left" Margin="18,118,0,0" VerticalAlignment="Top" Width="106" Click="UserClick" Height="70" Background="#FF8AE28A" FontWeight="Bold"/>
+        <Button Content="Store" TabIndex="2" HorizontalAlignment="Left" Margin="129,118,0,0" VerticalAlignment="Top" Width="106" Click="StoreClick" Height="70" Background="#FF8AE28A" FontWeight="Bold"/>
+        <Button Content="Description" TabIndex="3" HorizontalAlignment="Left" Margin="239,118,0,0" VerticalAlignment="Top" Width="106" Click="DescriptionClick" Height="70" Background="#FF8AE28A" FontWeight="Bold"/>
+        <Button Content="Income" TabIndex="4" HorizontalAlignment="Left" Margin="359,118,0,0" VerticalAlignment="Top" Width="129" Click="IncomeClick" Height="35" Background="#FF8AE28A" FontWeight="Bold"/>
+        <Button Content="Expenses" TabIndex="5" HorizontalAlignment="Left" Margin="491,118,0,0" VerticalAlignment="Top" Width="129" Click="ExpensesClick" Height="35" Background="#FF8AE28A" FontWeight="Bold"/>
+        <Button Content="Income Report" TabIndex="6" HorizontalAlignment="Left" Margin="359,158,0,0" VerticalAlignment="Top" Width="129" Height="30" Background="#FFB0DAB0" Click="dailyIncomeReport_Click"/>
+        <Button Content="Expenses Report" TabIndex="7" HorizontalAlignment="Left" Margin="491,158,0,0" VerticalAlignment="Top" Width="129" Height="30" Background="#FFB0DAB0" Click="dailyExpensesReport_Click"/>
+        <Label Content="Accounting Management System" HorizontalAlignment="Left" Margin="34,40,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF00FBD3" FontSize="14"/>
+
+    </Grid>
+</Window>
